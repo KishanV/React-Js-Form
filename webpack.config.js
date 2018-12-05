@@ -33,20 +33,15 @@ module.exports = {
             maxInitialRequests: Infinity,
             minSize: 0,
             cacheGroups: {
-                /*vendor: {
+                vendors: {
                     test: /[\\/]node_modules[\\/]/,
-                    name(module) {
-                        const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-                        return `npm.${packageName.replace('@', '')}`;
-                    },
-                },*/
-                src: {
-                    test: /[\\/]src[\\/]/,
-                    name(module) {
-                        const src = module.context.split('\\src')[1].split('\\').join('.').substr(1);
-                        return `${src}`;
-                    },
+                    priority: -10
                 },
+                default: {
+                    minChunks: 2,
+                    priority: -20,
+                    reuseExistingChunk: true
+                }
             },
         },
     },
