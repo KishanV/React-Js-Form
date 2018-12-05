@@ -8,8 +8,45 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #dedede;
     border-radius: 8px;
-    box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 32px;
+    > .Item {
+      height: 81px;
+      position: relative;
+      float: left;
+      width: 100%;
+      &.Header {
+        >.UserImg {
+          width: 48px;
+          height: 48px;
+          background-color: #fff;
+          border-radius: 28px;
+          margin: 16px;
+          background-image: url("./_Images/UserImg.png");
+          box-sizing: border-box;
+          border: 1px solid #eee;
+          position: relative;
+          float: left;
+        }
+        >.Message {
+          width: auto;
+          height: 60px;
+          background-color: #fff;
+          border-radius: 13px;
+          margin: 10px;
+          margin-left: 0;
+          box-sizing: border-box;
+          border: 1px solid #eee;
+          position: relative;
+          float: left;
+          padding: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          color: #9991bb;
+        }
+      }
+    }
   }
 }
