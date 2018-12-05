@@ -1,0 +1,15 @@
+.Container > .App {
+  > .Form {
+    position: absolute;
+    width: 560px;
+    height: 380px;
+    background-color: #fafcfe;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.05);
+  }
+}
