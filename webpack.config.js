@@ -43,7 +43,7 @@ module.exports = {
                 src: {
                     test: /[\\/]src[\\/]/,
                     name(module) {
-                        const src = module.context.split('\\ui')[1].split('\\').join('.').substr(1);
+                        const src = module.context.split('\\src')[1].split('\\').join('.').substr(1);
                         return `${src}`;
                     },
                 },
