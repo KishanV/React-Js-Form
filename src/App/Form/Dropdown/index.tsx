@@ -1,7 +1,7 @@
 import React = require("react");
-import './Dropdown.scss';
+import './index.scss';
 
-export class Dropdown extends React.Component<any, any> {
+export class Dropdown extends React.Component<any, any> { 
     constructor(props: any) {
         super(props);
         this.onKeyUp = this.onKeyUp.bind(this);
