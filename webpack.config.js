@@ -14,7 +14,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'Square Editor'
+            title: 'React Form...'
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
