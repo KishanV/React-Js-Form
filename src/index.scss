@@ -16,6 +16,10 @@ body {
   }
 }
 
+input {
+  user-select: auto;
+}
+
 @font-face {
   font-family: 'Roboto Condensed';
   font-style: normal;

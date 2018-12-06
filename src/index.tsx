@@ -19,8 +19,8 @@ const reducer = combineReducers({
 
 const store = createStore(reducer);
 
-window.oncontextmenu = () => {
-    return false;
+window.oncontextmenu = (e:MouseEvent) => {
+    return e.target instanceof HTMLInputElement && e.target.type == 'text';
 };
 
 const appElm = document.createElement('div');

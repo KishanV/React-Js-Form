@@ -1,5 +1,26 @@
 .Dropdown {
   >.List {
-
+    position: relative;
+    width: auto;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #fff;
+    float: left;
+    margin-left: 21px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    margin-top: -14px;
+    z-index: 2;
+    box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.05);
+    >.Item {
+      line-height: 24px;
+      padding-left: 20px;
+      padding-right: 20px;
+      &:hover, &.Sel {
+        background-color: #3A2E55;
+        color: #fff;
+      }
+    }
   }
 }
