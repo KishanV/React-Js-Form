@@ -4,7 +4,7 @@ export class Location extends React.Component<any, any> {
     state : {
         anyLocation:boolean
     } = {
-        anyLocation:true
+        anyLocation:false
     };
 
     constructor(props: any) {
